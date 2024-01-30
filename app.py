@@ -72,10 +72,12 @@ if selected == 'Diabetes Prediction':
 
         if diab_prediction[0] == 1:
             diab_diagnosis = 'The person is diabetic'
+            st.error(diab_diagnosis)
         else:
             diab_diagnosis = 'The person is not diabetic'
+            st.success(diab_diagnosis)
 
-    st.success(diab_diagnosis)
+   # st.success(diab_diagnosis)
 
 # Heart Disease Prediction Page
 if selected == 'Heart Disease Prediction':
@@ -139,10 +141,12 @@ if selected == 'Heart Disease Prediction':
 
         if heart_prediction[0] == 1:
             heart_diagnosis = 'The person is having heart disease'
+            st.error(heart_diagnosis)
         else:
             heart_diagnosis = 'The person does not have any heart disease'
+            st.success(heart_diagnosis)
 
-    st.success(heart_diagnosis)
+  # st.success(heart_diagnosis)
 
 # Parkinson's Prediction Page
 if selected == "Parkinsons Prediction":
@@ -234,7 +238,9 @@ if selected == "Parkinsons Prediction":
 
         if parkinsons_prediction[0] == 1:
             parkinsons_diagnosis = "The person has Parkinson's disease"
+            st.error(parkinsons_diagnosis)
         else:
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
+            st.success(parkinsons_diagnosis)
 
-    st.success(parkinsons_diagnosis)
+    #st.success(parkinsons_diagnosis)
